@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sci-Fi Archetype Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Which Sci-Fi Archetype Are You?</h1>
+
+            <form id="quiz">
+                <div class="question">
+                    <p>1. The world is ending. What do you do first?</p>
+                    <!--Used cs50 ai duck to ask what syntax only allows a user to choose one answer from an MCQ, it said input type= radio-->
+                    <!--asked duck what synatx allows you to display each option on a new line, it said <br>-->
+                    <input type="radio" name="q1" value="chosen"> Rally the people.<br />
+                    <input type="radio" name="q1" value="tyrant"> Seize control.<br />
+                    <input type="radio" name="q1" value="survivor"> Find shelter and survive.<br />
+                    <input type="radio" name="q1" value="machine"> Cut power supply and die. No reason to live.
+                </div>
+
+                <div class="question">
+                    <p>2. You encounter an alien. What do you do?</p>
+                    <input type="radio" name="q2" value="chosen"> Befriend it.<br />
+                    <input type="radio" name="q2" value="tyrant"> Try to kill it.<br />
+                    <input type="radio" name="q2" value="survivor"> Try to coexist with it.<br />
+                    <input type="radio" name="q2" value="machine"> Learn what species it is.
+                </div>
+
+                <div class="question">
+                    <p>3. You gain a supernatural power. What do you do with it?</p>
+                    <input type="radio" name="q3" value="chosen"> Use it to protect youself and other people.<br />
+                    <input type="radio" name="q3" value="tyrant"> Reign the world with it.<br />
+                    <input type="radio" name="q3" value="survivor"> Live with it.<br />
+                    <input type="radio" name="q3" value="machine"> Upgrade yourself to a better version.
+                </div>
+
+                <div class="question">
+                    <p>4. You come across a situation where it's whether you or the world. What do you choose?</p>
+                    <input type="radio" name="q4" value="chosen"> Seppuku it is.<br />
+                    <input type="radio" name="q4" value="tyrant"> We all go down.<br />
+                    <input type="radio" name="q4" value="survivor"> Make a deal with higher being to save me and the world.<br />
+                    <input type="radio" name="q4" value="machine"> I choose me.
+                </div>
+
+                <br />
+                <button id="submit">Reveal my Archetype</button>
+
+            </form>
+
+            <div id="result" class="hidden"> <!--this will hide the resutls until you're finished with the quiz-->
+                <h3 id="result-title"></h3> <!--displays result title in h3 font -->
+                <p id="result-description"></p> <!--descrpition of result-->
+                <button onclick="window.location.reload()">Try Again</button> <!--used the cs50 ai duck to ask how to allow users to try the quiz again-->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
